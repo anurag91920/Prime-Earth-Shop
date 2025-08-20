@@ -1,0 +1,24 @@
+/* Footer.css */
+
+.footer {
+  background-color: #000000;
+  padding: 30px 0;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-line {
+  border-top: 1px solid #444;
+  width: 80%;
+  margin: 0 auto 20px;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+.footer-text a {
+  color: #1e90ff;
+  text-decoration: none;
+}

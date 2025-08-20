@@ -1,0 +1,52 @@
+.trust-badges-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px 20px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 300px;
+  padding: 10px 20px;
+  border-right: 1px solid #eee;
+}
+
+.badge:last-child {
+  border-right: none;
+}
+
+.icon-circle {
+  background-color: #2e5e1e;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.badge-text h4 {
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.badge-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+.badge-text p a {
+  color: #2e5e1e;
+  text-decoration: none;
+}

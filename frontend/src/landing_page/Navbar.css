@@ -1,0 +1,115 @@
+/* Navbar.css */
+
+.custom-navbar {
+  background-color: #080404;
+  padding: 0.8rem 1rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+.logo-text {
+  color: #febe01;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+
+.brand-name {
+  color: #febe01;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.nav-text {
+  color: #febe01 !important;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-text:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 5px rgba(254, 185, 1, 0.7);
+}
+
+.custom-toggler {
+  border: none;
+  background: transparent;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .nav-text {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .logo-img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.shop-cart {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.shop-cart:hover {
+  transform: scale(1.1);
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+}
+
+.user-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.user-icon:hover {
+  transform: scale(1.1);
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+
+
+
+

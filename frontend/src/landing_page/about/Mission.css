@@ -1,0 +1,38 @@
+.mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 50px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.mission-image img {
+  max-width: 100%;
+  width: 400px;
+  border-radius: 8px;
+}
+
+.mission-content {
+  max-width: 600px;
+}
+
+.mission-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+.mission-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+.mission-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
