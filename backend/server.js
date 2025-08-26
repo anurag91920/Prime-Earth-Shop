@@ -10,7 +10,12 @@ const authRoutes = require('./routes/auth');
 
 const app = express();
 
-app.use(cors());
+// Middleware
+app.use(cors({
+    origin: 'https://prime-earth-shop.vercel.app',  
+    credentials: true
+}));
+
 app.use(express.json());
 
 //Test Route
