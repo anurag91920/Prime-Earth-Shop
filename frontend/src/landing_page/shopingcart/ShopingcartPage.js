@@ -1,14 +1,38 @@
-import React from 'react';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Hero from "./Hero";
 
-import Hero from './Hero';
+const ShopingcartPage = () => {
+  const navigate = useNavigate();
+
+  const handleCheckout = () => {
+    navigate("/payment");
+  };
+
+  return (
+    <div>
+      <Hero
+        cartItems={[]}
+        onCheckout={handleCheckout}
+      />
+    </div>
+  );
+};
+
+export default ShopingcartPage;
 
 
-function ShoppingCartPage () {
-    return (
-        <>
-          <Hero />
-        </>
-    );
-}
+// import React from 'react';
 
-export default ShoppingCartPage;
+// import Hero from './Hero';
+
+
+// function ShoppingCartPage () {
+//     return (
+//         <>
+//           <Hero />
+//         </>
+//     );
+// }
+
+// export default ShoppingCartPage;

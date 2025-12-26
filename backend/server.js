@@ -7,6 +7,7 @@ dotenv.config();
 
 
 const authRoutes = require('./routes/auth');
+const paymentRoutes = require('./routes/payment');
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.get('/', (req, res) => {
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/payment', paymentRoutes);
 
 
 // Database Connection

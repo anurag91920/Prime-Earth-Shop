@@ -30,7 +30,7 @@ function Hero({ cartItems = [], onClose, onRemoveItem, onViewCart, onCheckout })
           <strong>Subtotal:</strong> <span>${subtotal.toFixed(2)}</span>
         </div>
         <button className="btn view-cart-btn" onClick={onViewCart}>VIEW CART</button>
-        <button className="btn checkout-btn" onClick={onCheckout}>CHECKOUT</button>
+        <button className="btn checkout-btn" onClick={onCheckout}> Proceed to Checkout</button>
       </div>
     </div>
   );

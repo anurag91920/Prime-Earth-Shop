@@ -11,6 +11,8 @@ import SignupPage from './landing_page/signup/SignupPage';
 import LoginPage from './landing_page/login/LoginPage';
 import ProductDetailPage from './landing_page/productdetail/ProductDetailPage';
 import ShoppingCartPage from './landing_page/shopingcart/ShopingcartPage';
+import Payment from './landing_page/payment/Payment';
+
 import Footer from './landing_page/Footer';
 import Navbar from './landing_page/Navbar';
 
@@ -30,6 +32,8 @@ root.render(
       <Route path='/login' element={<LoginPage />} />
       <Route path='/productdetail/:posterId' element={<ProductDetailPage />} />
       <Route path='/shoppingcart' element={<ShoppingCartPage />} />
+      <Route path="/payment" element={<Payment />} />
+
     </Routes>
     <Footer />
   </BrowserRouter>
