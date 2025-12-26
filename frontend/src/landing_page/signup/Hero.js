@@ -15,7 +15,7 @@ function Signup() {
       );
 
       alert(res.data.status || "Signup complete");
-      navigate("/login"); // Redirect after successful signup
+      navigate("/"); // Redirect after successful signup
     } catch (error) {
       console.error(error);
       alert(error.response?.data?.error || "Signup failed. Try again.");

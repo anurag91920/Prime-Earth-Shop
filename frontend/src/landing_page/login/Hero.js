@@ -17,7 +17,7 @@ function Login() {
       if (res.data.token) {
         alert("Login Success");
         localStorage.setItem("token", res.data.token);
-        navigate("/dashboard"); // Redirect after login
+        navigate("/"); // Redirect after login
       } else {
         alert(res.data.error || "Login failed");
       }
