@@ -25,13 +25,14 @@ function CheckoutForm() {
 
     try {
       const res = await fetch(
-        "http://localhost:5000/api/payment/create-payment-intent",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ amount: 100 }), // ₹100
-        }
-      );
+     `${process.env.REACT_APP_BACKEND_URL}/api/payment/create-payment-intent`,
+     {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ amount: 100 }),
+       }
+    );
+
 
       const { clientSecret } = await res.json();
 
