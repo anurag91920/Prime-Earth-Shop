@@ -12,9 +12,8 @@ const stripePromise = loadStripe(
   process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY
 );
 
-/* =======================
-   CHECKOUT FORM
-======================= */
+/* CHECKOUT FORM */
+
 function CheckoutForm() {
   const stripe = useStripe();
   const elements = useElements();
@@ -120,9 +119,7 @@ function CheckoutForm() {
   );
 }
 
-/* =======================
-   PAYMENT PAGE
-======================= */
+/* PAYMENT PAGE */
 export default function Payment() {
   return (
     <div
