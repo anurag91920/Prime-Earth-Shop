@@ -28,6 +28,11 @@ function Hero() {
     navigate(`/productdetail/${slug}`);
   };
 
+  const onCheckout = () => {
+  navigate('/payment'); // or '/checkout'
+};
+
+
   return (
     <div className="shop-page">
       <aside className="sidebar">
@@ -78,10 +83,11 @@ function Hero() {
               <p className="price">${product.price.toFixed(2)}</p>
 
               <div className="product-buttons">
-                <button className="buy-now" onClick={() => handleProductClick(product.slug)}>BUY NOW ➞</button>
-                <button className="add-to-cart">
-                  <img src="/media/icons/bag-icon.png" alt="Cart" className="cart-icon" />
+                <button className="buy-now" onClick={onCheckout}>BUY NOW ➞</button>
+                <button className="add-to-cart" onClick={() => handleProductClick(product.slug)}>
+                   <img src="/media/icons/bag-icon.png" alt="Cart" className="cart-icon"/>
                 </button>
+
               </div>
             </div>
           ))}

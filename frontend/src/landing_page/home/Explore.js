@@ -5,6 +5,11 @@ import './Explore.css';
 function Explore() {
     const navigate = useNavigate();
 
+
+    const onCheckout = () => {
+      navigate('/payment'); 
+    };
+
     const posters = [
         {
             id: 1,
@@ -35,10 +40,7 @@ function Explore() {
             image: '/media/images/poster-v4.png',
         },
     ];
-
-    const handleProductClick = (slug) => {
-        navigate(`/productdetail/${slug}`);
-    };
+ 
 
     return (
         <div className="poster-section">
@@ -50,7 +52,8 @@ function Explore() {
                         <img src={poster.image} alt={poster.title} className="poster-img" />
                         <h3>{poster.title}</h3>
                         <p className="price">{poster.price}</p>
-                        <button className="buy-now" onClick={() => handleProductClick(poster.slug)}>BUY NOW ➞</button>
+                        <button className="buy-now" onClick={onCheckout}>BUY NOW ➞</button>
+                       
                     </div>
                 ))}
             </div>

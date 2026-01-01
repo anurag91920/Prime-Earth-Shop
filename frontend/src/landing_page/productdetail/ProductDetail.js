@@ -207,10 +207,12 @@ function ProductDetail() {
 
     if (!poster) return <h2>Product not found</h2>;
 
-    const handleAddToCart = () => {
-    // 🛒 You can also add cart logic here later
-       navigate('/shoppingcart'); // ✅ Redirect to cart page
-      };
+    
+
+       const onCheckout = () => {
+        navigate('/payment'); // or '/checkout'
+        };
+
 
     return (
         <div className="product-detail-container">
@@ -230,8 +232,8 @@ function ProductDetail() {
                     <button>+</button>
                 </div>
 
-                 {/* ✅ Updated onClick to trigger navigation */}
-                   <button className="add-to-cart" onClick={handleAddToCart}> ADD TO CART </button>
+                 {/*  Updated onClick to trigger navigation */}
+                   <button className="add-to-cart" onClick={onCheckout}> BUY NOW ➞ </button>
 
                 <div className="details">
                     <h3>Description</h3>
